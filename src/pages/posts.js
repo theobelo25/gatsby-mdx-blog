@@ -4,8 +4,6 @@ import Hero from '../components/Hero'
 import { graphql } from 'gatsby'
 import Posts from '../components/Posts'
 const PostsPage = ({ data }) => {
-  console.log(data)
-
   const {
     allMdx: { nodes: posts },
   } = data

@@ -29,7 +29,6 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   result.data.categories.distinct.forEach(category => {
-    console.log(category)
     createPage({
       path: `/${category}`,
       component: path.resolve(`src/templates/category-template.js`),
